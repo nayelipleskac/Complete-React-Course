@@ -2,7 +2,7 @@
 
 import './ExpenseItem.css';
 
-function ExpenseItem() {
+function ExpenseItem(props) {
     const expenseDate = new Date(2022, 1, 15);
     const expenseTitle = 'Books';
     const expenseAmount = 29.99;
