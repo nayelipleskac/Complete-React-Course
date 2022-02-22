@@ -2,7 +2,6 @@ import ExpenseItem from './ExpenseItem';
 import './Expenses.css'
 import Card from './Card';
 function Expenses(props) {
-
     return (
         <Card className = "expenses">
           <h2>Let's get started</h2>
