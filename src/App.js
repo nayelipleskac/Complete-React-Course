@@ -1,6 +1,6 @@
 //npx create-react-app: https://create-react-app.dev/docs/getting-started
 
-import Expenses from './compontents/Expenses';
+import Expenses from './compontents/Expenses/Expenses';
 
 function App() {
 
