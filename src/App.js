@@ -1,6 +1,6 @@
 //npx create-react-app: https://create-react-app.dev/docs/getting-started
 
-import Expenses from './compontents/Expenses/Expenses';
+import Expenses from './compontents/Expenses/Expenses'
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
     { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
     {
       id: 'e3',
-      title: 'Car Insurance',
+      title: 'Car Insurance',   
       amount: 294.67,
       date: new Date(2021, 2, 28),
     },
@@ -24,16 +24,28 @@ function App() {
       amount: 450,
       date: new Date(2021, 5, 12),
     },
+    {
+      id: 'e5',
+      title: 'New Desk (Wooden)',
+      amount: 450,
+      date: new Date(2021, 5, 12),
+    },
   ];
 
   return (
     <div>
       <h2>Let's get started</h2>
-      <Expenses items = {expenses}/>
+      <Expenses  items={expenses} />
+      <Welcome name = 'text'></Welcome>
 
     </div>
   );
 }
 
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
 export default App;
+
 
